@@ -753,17 +753,15 @@ var pJS = function(tag_id, params){
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
-  
-    document.getElementById('round').addEventListener('click', () => {
-      setTimeout( () => {
+      
         for(var i = 0; i < nb; i++){
           pJS.particles.array.push(
             new pJS.fn.particle(
               pJS.particles.color,
               pJS.particles.opacity.value,
               {
-                'x': document.body.clientWidth * 0.5,
-                'y': document.body.clientHeight - document.body.clientHeight * 0.8
+                'x': pJS.interactivity.mouse.pos_x,
+                'y': pJS.interactivity.mouse.pos_y
               }
             )
           )
@@ -774,8 +772,7 @@ var pJS = function(tag_id, params){
             pJS.tmp.pushing = false;
           }
         }
-      }, 3000)
-    })
+    
   };
 
 
