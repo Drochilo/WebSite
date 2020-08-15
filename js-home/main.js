@@ -1,6 +1,4 @@
 const drochilo = document.getElementById("round")
-const cum = document.querySelector('.particles-js-canvas-el')
-const cumshow = document.querySelector('.c')
 
 drochilo.addEventListener('click', () => {
     drochilo.classList.add('speed-boost-1')
@@ -11,6 +9,7 @@ drochilo.addEventListener('click', () => {
         setTimeout(() => {
             drochilo.classList.remove('speed-boost-2')
             drochilo.style.pointerEvents = 'all';
+            window.navigator.vibrate(1500);
         }, 4000);
     }, 4000);
 });

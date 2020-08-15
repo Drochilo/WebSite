@@ -27,6 +27,8 @@ img{
   border: none;
 }
 #round {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
     pointer-events: all;
     width: 250px;
     height: 250px;
