@@ -36,7 +36,7 @@ img{
     border-radius: 50%;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    margin: 0;
+    margin: auto;
 
     z-index: 10;
 }
